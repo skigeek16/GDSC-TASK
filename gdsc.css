@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  width: 800px;
+  height: 600px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  border: 5px;
+}
+
+.red {
+  background: linear-gradient(to left,yellow,orange);
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  
+  border-top-left-radius: 5px;
+}
+
+.beige {
+  background: linear-gradient(to right,yellow,rgb(255, 73, 225));
+  
+}
+
+.purple {
+ background: linear-gradient(to right,rgb(199, 7, 209),rgb(65, 227, 255));
+    grid-column: 3/3;
+    grid-row: 1/3;
+    
+    border-top-right-radius: 5px;
+    
+}
+
+.black {
+ background: linear-gradient(to right,yellow,rgb(255, 73, 225));
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 32px;
+    
+}
+
+
+.green {
+  background: linear-gradient(to right,orange,yellow,rgb(236, 76, 196));
+   
+  
+    grid-column: 1/3;
+    border-bottom-left-radius: 5px;
+}
+.new
+{
+  background: linear-gradient(to right, rgb(199, 7, 209),rgb(65, 227, 255));
+  border-bottom-right-radius: 5px;
+}
+
+
+.icon {
+  font-size: 40px;
+  color:black;
+ 
+}
+.fa-eye-slash:before {
+    content: "\f070";
+    color: white;
+}
+.fa-paint-brush:before, .fa-paintbrush:before {
+    content: "\f1fc";
+    color: white;
+}
